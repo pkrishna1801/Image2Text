@@ -1,7 +1,29 @@
 
-# 📄 Chest X-ray Dataset Preprocessing
 
-This project demonstrates how to load and preprocess the [Indiana University Chest X-ray dataset](https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university) using Python and PyTorch. It includes utilities to download the dataset via `kagglehub`, merge metadata, and begin dataset preparation for machine learning.
+# 🩺 U-Xray: Chest X-ray Report Generation
+
+## 📚 Dataset Information
+
+The **IU-XRay** (Indiana University Chest X-Rays) dataset contains a collection of chest X-ray images and their corresponding diagnostic reports, collected by Indiana University. It includes **7,470** frontal or lateral chest X-ray images and **3,955** corresponding reports.
+
+Each radiology report includes four sections:
+- **Comparison**: Prior patient history (e.g., previous exams)
+- **Indication**: Symptoms or reasons for the exam (e.g., hypoxia)
+- **Findings**: Radiological observations
+- **Impression**: Final diagnosis
+
+A robust system should ideally generate both the **Findings** and **Impression** sections, potentially connecting them for coherent medical summaries.
+
+---
+
+## 🏥 Importance
+
+Radiologists and physicians interpret large volumes of biomedical images (X-rays, CT, PET scans) daily. Automating report generation helps:
+- Reduce diagnostic errors
+- Support less experienced doctors with suggestions
+- Lower the cost per patient examination
+
+The IU-XRay dataset was an early contribution to this domain and continues to be a benchmark for evaluating large multimodal medical models (e.g., MedDr, RadFM).
 
 ---
 
